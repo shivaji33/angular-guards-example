@@ -1,0 +1,11 @@
+<button [routerLink]="['/posts']">Back</button>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <input type="input" name="title"
+  [(ngModel)]="postData.title"
+   placeholder="Title" required />
+<input type="input" name="title"
+ [(ngModel)]="postData.body"
+ placeholder="Body" required />
+<button>Save</button>
+</form>
